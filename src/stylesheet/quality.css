@@ -5,8 +5,9 @@
     padding-right: 13vw;
     display: flex;
     flex-wrap: wrap;
-    z-index: 4;
+    z-index: 5;
     position: sticky;
+    padding-bottom: 5vw;
 }
 
 .quality-box{

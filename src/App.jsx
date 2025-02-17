@@ -6,6 +6,7 @@ import Lenis from 'lenis'
 import Section1 from './Component/Section1'
 import Machinary from './Component/Machinary'
 import Quality from './Component/Quality'
+import Footer from './Component/Footer'
 
 const App = () => {
   const lenis = new Lenis({
@@ -19,42 +20,9 @@ const App = () => {
         <Section1 />
         <Machinary/>
         <Quality/>
+        <Footer/>
       </div>
-      <h1>csdhcbsdhb</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
-      <h1>sfusd</h1>
+
     </div>
   )
 }

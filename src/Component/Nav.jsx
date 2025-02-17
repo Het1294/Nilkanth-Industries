@@ -1,18 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/Logo.png'
 import '../stylesheet/nav.css'
 import Call from '../assets/SVG/call.svg'
 import Whatsapp from '../assets/SVG/whatsapp.svg'
-
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 const Nav = () => {
     const [isOpened, setIsOpened] = useState(false);
-
+    gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+        gsap.to(".nav-loader", {
+            width: "100%",  // Animates from 0% to 100%
+            ease: "none",
+            scrollTrigger: {
+                trigger: "body",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: true, // Smooth transition
+            }
+        });
+    })
+    window.addEventListener('scroll', () => {
+    })
     const toggleMenu = () => {
         setIsOpened((prev) => !prev);
-
     };
     return (
         <div className='nav-page'>
+            <div className='nav-loader' ></div>
             <nav className='nav'>
                 <img src={Logo} className='nav-logo' />
                 <div className='nav-links'>
@@ -23,8 +38,8 @@ const Nav = () => {
                 </div>
 
                 <div className='nav-contact-img'>
-                    <img src={Call} onClick={()=>window.open("tel:9428479546")} />
-                    <img src={Whatsapp} onClick={()=>window.open('https://wa.me/9428479546?text=Hiiiiiii')} />
+                    <img src={Call} onClick={() => window.open("tel:9428479546")} />
+                    <img src={Whatsapp} onClick={() => window.open('https://wa.me/9428479546?text=Hiiiiiii')} />
                     <button
                         className={`menu ${isOpened ? 'opened' : ''}`}
                         onClick={toggleMenu}

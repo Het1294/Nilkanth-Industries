@@ -1,0 +1,98 @@
+.footer-page {
+    display: flex;
+    justify-content: center;
+    padding: 2vw 5vw 1vw;
+    background-color: rgb(214, 237, 237);
+    border: 1px solid black;
+    position: sticky;
+    z-index: 5;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+
+    &>hr {
+        width: 0.1vw;
+        scale: 0.85;
+    }
+}
+
+.footer-company {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 27vw;
+
+    &>iframe {
+        width: 60%;
+        margin-left: 20%;
+        aspect-ratio: 1/1;
+        box-shadow: 0 0 1vw grey;
+    }
+}
+
+.footer-company-detail {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    gap: 1vw;
+
+    &>img {
+        width: 15%;
+        cursor: pointer;
+    }
+
+    &>h3 {
+        font-size: 1.75vw;
+        cursor: pointer;
+    }
+}
+
+.footer-links {
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 0.35vw;
+    /* background-color: cadetblue; */
+    padding: 1.5vw;
+    &>h3 {
+        color: rgb(17, 66, 66);
+        margin-bottom: 1vw;
+    }
+    &>a {
+        color: rgb(17, 66, 66);
+        text-decoration: none;
+    }
+
+}
+
+.footer-contacts {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    padding: 1.75% 3%;
+    gap: 5%;
+    &>div{
+        width: 90%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 4%;
+        &>img{
+            width: 7%;
+        }
+        &>a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    &>div:nth-of-type(2){
+        width: 90%;
+        gap: 1%;
+        &>img{
+            width: 10%;
+            transform: translate(-10% , -20%);
+        }
+    }
+}
