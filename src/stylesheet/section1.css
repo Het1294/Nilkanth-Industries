@@ -1,0 +1,78 @@
+.sec1-area {
+    width: 100%;
+    padding-top: 5vw;
+    /* position: sticky; */
+    background-color: #fff;
+    z-index: 1;
+}
+
+.sec1-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sec1-info-box {
+    width: 16%;
+    cursor: pointer;
+    position: relative;
+    background-color: whitesmoke;
+    aspect-ratio: 5/4;
+    border: 0.1vw solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1%;
+    &>h3{
+        font-size: 1.25vw;
+    }
+    &>div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+        background-color: rgba(0, 0, 0,0.8);
+        color: white;
+        transition: all 0.5s linear;
+    }
+
+    &:hover>div{
+        opacity: 1;
+    }
+}
+
+.sec1-info-box>img {
+    width: 30%;
+    /* height: 50%; */
+    aspect-ratio: 1/1;
+}
+
+@media (max-width:650px){
+    .sec1-info-box {
+        width: 43%;
+        &>h3{
+        font-size: 3.25vw;
+        }
+        &>img{
+        height: 43%;
+        }
+        &>div{
+        font-size: 2.5vw;
+        }
+    }
+}

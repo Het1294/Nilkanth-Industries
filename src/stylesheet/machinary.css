@@ -1,0 +1,82 @@
+.machinary-page {
+    background-color: white;
+    padding-top: 7vw;
+    position: sticky;
+    top: 0vw;
+    z-index: 3;
+}
+
+.machinary-page>h1 {
+    position: relative;
+    color: brown;
+    font-size: 2vw;
+    margin-left: 13vw;
+
+    &::before {
+        content: "Machinary";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0 solid rgb(46, 46, 177);
+        border-width: 0 0 0.2vw 0;
+        color: transparent;
+    }
+}
+
+.machine-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+}
+
+.machine-area {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 3vw;
+
+    &>img {
+        width: 25vw;
+    }
+    &>div {
+        width: 35vw;
+    }
+}
+
+@media (max-width:650px) {
+    .machinary-page {
+        padding-top: 15vw;
+
+        &>h1 {
+            font-size: 5.5vw;
+            text-align: center;
+            width: 66vw;
+            margin: 0 18vw;
+
+            &::before {
+                width: 66vw;
+            }
+        }
+    }
+
+    .machine-area {
+        flex-direction: column;
+
+        &:last-child {
+            flex-direction: column-reverse;
+            margin-top: 15vw;
+        }
+
+        &>img {
+            width: 80vw;
+        }
+
+        &>div {
+            width: 85vw;
+            line-height: 5.5vw;
+        }
+    }
+
+}
