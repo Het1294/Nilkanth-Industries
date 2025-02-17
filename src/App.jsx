@@ -20,7 +20,7 @@ const App = () => {
         <Machinary/>
         <Quality/>
       </div>
-      <h1>sfusd</h1>
+      <h1>csdhcbsdhb</h1>
       <h1>sfusd</h1>
       <h1>sfusd</h1>
       <h1>sfusd</h1>
