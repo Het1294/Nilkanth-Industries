@@ -7,7 +7,7 @@ const Quality = () => {
     return (
         <div className='quality-page'>
             <div className='quality-cont'>
-                <div>
+                <div className='quality-head'>
 
                 <h1>Quality Policy</h1>
 
