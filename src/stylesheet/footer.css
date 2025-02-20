@@ -74,7 +74,7 @@
     padding: 1.75% 3%;
     gap: 5%;
     &>div{
-        width: 90%;
+        width: 70%;
         display: flex;
         align-items: start;
         justify-content: start;
@@ -97,30 +97,47 @@
     }
 }
 @media (max-width:650px){
+    .footer-page{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 5vw;
+        &>hr:nth-of-type(1){
+            display: none;
+        }
+    }
+    .footer-company{
+        flex-direction: row;
+        justify-content: center;
+        gap: 7vw;
+        width: 95vw;
+        
+    }
     .footer-company-detail{
         display: flex;  
         flex-direction: column;
         margin-top: 2vw;
-        width: 100%;
+        width: 30vw;
         &>img{
-            width: 15vw;
+            width: 30vw;
             padding: 1vw;
         }
         &>h3{
-            font-size: 3.5vw;
+            font-size: 5vw;
             text-align: center;
         }
         
     }
     .footer-company>iframe{
         display: flex;
-        width: 70%;
-        margin-left: 4vw;
+        width: 48vw;
+        margin-top: 2vw;
+        margin-left: 0;
     }
     .footer-links{
         display: flex;
         margin-top: 2vw;
-        gap: 2vw;
+        width: 30vw;
         &>a{
             text-align: center;
         }
@@ -128,19 +145,29 @@
     .footer-contacts{
         display: flex;
         justify-content: center;
-        /* background-color: green; */
         padding: 1vw;
+        width: 57vw;
+        &>div{
+            width: 100%;
+        }
         &>div>img{
-            width: 4.5vw !important;
+            width: 4.5vw ;
         }
         &>div>p{
-            font-size: 2.5vw;
+            font-size: 3.25vw;
             text-align: start;
           }
          &>div>a{
-            font-size: 2.4vw;
-            
+            font-size: 3.5vw;
+            min-width: 50vw;
          } 
-    
+         &>div:nth-of-type(2){
+            width: 6.5vw;
+            gap: 1%;
+            &>img{
+                width: 100%;
+                transform: translate(-10% , -20%);
+            }
+        }
     }
 }

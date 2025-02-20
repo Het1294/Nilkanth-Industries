@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Nav from './Component/Nav'
 import './App.css'
 import Slider from './Component/Slider'
@@ -9,18 +9,24 @@ import Quality from './Component/Quality'
 import Footer from './Component/Footer'
 
 const App = () => {
+  const [footerTop , setFooterTop]=useState(null)
+  const [aboutTop , setAboutTop]=useState(null)
+  useEffect(()=>{
+    console.log("=>"+footerTop);
+    
+  },[footerTop])
   const lenis = new Lenis({
     autoRaf: true,
   });
   return (
     <div>
-      <Nav />
+      <Nav footerTop={footerTop} aboutTop={aboutTop}/>
       <div className='home-page'>
         <Slider />
         <Section1 />
-        <Machinary/>
+        <Machinary setAboutTop={setAboutTop}/>
         <Quality/>
-        <Footer/>
+        <Footer setFooterTop={setFooterTop}/>
       </div>
 
     </div>

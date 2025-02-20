@@ -1,5 +1,8 @@
 .nav-page{
   background-color: rgba(186, 239, 239, 0.578);
+  position: sticky;
+  z-index: 99;
+  top: 0;
 }
 .nav {
   width: 100%;
@@ -17,11 +20,6 @@
   height: 0.25vw;
   width: 0%;
   background-color: rgb(22, 85, 93);
-}
-.nav-page {
-  position: sticky;
-  z-index: 99;
-  top: 0;
 }
 
 .nav-logo {
@@ -160,7 +158,6 @@
 }
 
 @media (max-width:650px) {
-  
   .nav {
     height: 15vw;
     overflow: hidden;

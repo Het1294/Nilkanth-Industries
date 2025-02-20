@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../stylesheet/machinary.css'
 import VMC from '../assets/Machine/VMC.jpg'
 import CNC from '../assets/Machine/CNC.png'
 
-const Machinary = () => {
+const Machinary = ({setAboutTop}) => {
+    const M = useRef(null)
+      useEffect(()=>{
+          if(M!==null){
+              setAboutTop(M.current.offsetTop);
+          }
+      })
   return (
-    <div className='machinary-page'>
+    <div className='machinary-page' ref={M}>
      <h1>Manufacturing Facility</h1>
      <div className='machine-img'>
         <div className='machine-area'>

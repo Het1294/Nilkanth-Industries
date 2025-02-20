@@ -27,7 +27,7 @@
     gap: 1%;
     flex-wrap: nowrap;
     animation-name: slider;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -45,7 +45,7 @@
 
 .slider>img {
     width: 9%;
-    /* object-fit: contain; */
+    object-fit: contain;
     aspect-ratio: 3/4;
     border-radius: 0.75vw;
     /* border: 6px solid black; */
@@ -62,5 +62,8 @@
     }
     .slider {
         width: 750%;
+        &>img{
+            
+        }
     }
 }

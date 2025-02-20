@@ -5,7 +5,7 @@ import Call from '../assets/SVG/call.svg'
 import Whatsapp from '../assets/SVG/whatsapp.svg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
-const Nav = () => {
+const Nav = ({footerTop,aboutTop}) => {
     const [isOpened, setIsOpened] = useState(false);
     gsap.registerPlugin(ScrollTrigger);
     useEffect(() => {
@@ -31,10 +31,10 @@ const Nav = () => {
             <nav className='nav'>
                 <img src={Logo} className='nav-logo' />
                 <div className='nav-links'>
-                    <a href="">HOME</a>
+                    <a href="#" onClick={()=>scrollTo({top:0,behavior: "smooth"})}>HOME</a>
                     <a href="">PRODUCTS</a>
-                    <a href="">ABOUT US</a>
-                    <a href="">CONTACT US</a>
+                    <a href="#about" onClick={()=>scrollTo({top:aboutTop,behavior: "smooth"})}>ABOUT US</a>
+                    <a href="#contact" onClick={()=>scrollTo({top:footerTop,behavior: "smooth"})}>CONTACT US</a>
                 </div>
 
                 <div className='nav-contact-img'>
@@ -55,10 +55,10 @@ const Nav = () => {
                 </div>
             </nav>
             <div className='mob-nav-links' style={{ right: isOpened ? "0vw" : "-55vw" }}>
-                <a href="">HOME</a>
+                <a href="" onClick={()=>scrollTo({top:0,behavior: "smooth"})}>HOME</a>
                 <a href="">PRODUCTS</a>
-                <a href="">ABOUT US</a>
-                <a href="">CONTACT US</a>
+                <a href="#about" onClick={()=>scrollTo({top:aboutTop,behavior: "smooth"})}>ABOUT US</a>
+                <a href="#contact" onClick={()=>scrollTo({top:footerTop,behavior: "smooth"})}>CONTACT US</a>
             </div>
 
         </div>

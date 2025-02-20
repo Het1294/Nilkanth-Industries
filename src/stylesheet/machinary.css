@@ -48,7 +48,7 @@
 @media (max-width:650px) {
     .machinary-page {
         padding-top: 15vw;
-
+        position:static;
         &>h1 {
             font-size: 5.5vw;
             text-align: center;
@@ -74,7 +74,7 @@
         }
 
         &>div {
-            width: 85vw;
+            width: 90vw;
             line-height: 5.5vw;
         }
     }

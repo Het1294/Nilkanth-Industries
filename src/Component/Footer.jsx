@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Logo from "../assets/Logo.png"
 import Location from "../assets/SVG/location.svg"
 import Call from "../assets/SVG/call-footer.svg"
 import Mail from "../assets/SVG/mail.svg"
 import "../stylesheet/footer.css"
-const Footer = () => {
+const Footer = ({ setFooterTop }) => {
+    const F = useRef(null)
+    useEffect(()=>{
+        if(F!==null){
+            setFooterTop(F.current.offsetTop);
+        }
+    })
     return (
-        <div className='footer-page'>
+        <div className='footer-page' ref={F}>
             <div className='footer-company'>
                 <div className='footer-company-detail'>
                     <img src={Logo} />
@@ -29,7 +35,7 @@ const Footer = () => {
                 <div><img src={Call} /><a href='tel:+91 9428479546'>+91 9428479546</a></div>
                 <div><img src={Mail} /><a href='mailto:himanshup488@gmail.com'>himanshup488@gmail.com</a></div>
             </div>
-            <div style={{width:'100%'}}></div>
+            <div style={{ width: '100%' }}></div>
         </div>
     )
 }
