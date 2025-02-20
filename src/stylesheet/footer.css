@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    gap: 0.35vw;
+    gap: 1vw;
     /* background-color: cadetblue; */
     padding: 1.5vw;
     &>h3 {
@@ -115,6 +115,7 @@
     .footer-company>iframe{
         display: flex;
         width: 70%;
+        margin-left: 4vw;
     }
     .footer-links{
         display: flex;
@@ -123,5 +124,23 @@
         &>a{
             text-align: center;
         }
+    }
+    .footer-contacts{
+        display: flex;
+        justify-content: center;
+        /* background-color: green; */
+        padding: 1vw;
+        &>div>img{
+            width: 4.5vw !important;
+        }
+        &>div>p{
+            font-size: 2.5vw;
+            text-align: start;
+          }
+         &>div>a{
+            font-size: 2.4vw;
+            
+         } 
+    
     }
 }

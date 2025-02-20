@@ -29,7 +29,7 @@ const Footer = () => {
                 <div><img src={Call} /><a href='tel:+91 9428479546'>+91 9428479546</a></div>
                 <div><img src={Mail} /><a href='mailto:himanshup488@gmail.com'>himanshup488@gmail.com</a></div>
             </div>
-            <div style={{width:'100%'}}>dsafhkjgsukfhsdlkfdskfjdslkfsdlk</div>
+            <div style={{width:'100%'}}></div>
         </div>
     )
 }
