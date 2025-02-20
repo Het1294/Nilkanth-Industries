@@ -96,3 +96,32 @@
         }
     }
 }
+@media (max-width:650px){
+    .footer-company-detail{
+        display: flex;  
+        flex-direction: column;
+        margin-top: 2vw;
+        width: 100%;
+        &>img{
+            width: 15vw;
+            padding: 1vw;
+        }
+        &>h3{
+            font-size: 3.5vw;
+            text-align: center;
+        }
+        
+    }
+    .footer-company>iframe{
+        display: flex;
+        width: 70%;
+    }
+    .footer-links{
+        display: flex;
+        margin-top: 2vw;
+        gap: 2vw;
+        &>a{
+            text-align: center;
+        }
+    }
+}

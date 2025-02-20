@@ -80,6 +80,7 @@
         flex-direction: column;
         /* background-color: aquamarine; */
         gap: 3vw;
+        margin-top: 1.5vw;
         &>div>h1{
             font-size: 5.6vw !important;
             text-align: start;
