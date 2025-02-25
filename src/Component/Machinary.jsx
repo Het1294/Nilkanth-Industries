@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import '../stylesheet/machinary.css'
-import VMC from '../assets/Machine/VMC.jpg'
-import CNC from '../assets/Machine/CNC.png'
+import VMC from '../assets/Machine/lx20t l5.png'
+import CNC from '../assets/Machine/KTM.jpg'
 
 const Machinary = ({setAboutTop}) => {
     const M = useRef(null)
