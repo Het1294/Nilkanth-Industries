@@ -17,13 +17,13 @@ const Machinary = ({setAboutTop}) => {
         <div className='machine-area'>
             <img src={CNC}/>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium nesciunt accusamus voluptatum facilis, atque labore porro! Nostrum, laudantium voluptatibus doloremque est incidunt, molestiae aliquam labore, nam accusantium blanditiis minus.Veritatis itaque iste culpa nihil harum! Commodi iste fugit repellendus illum fuga quia ea dolorem, dicta repudiandae, earum possimus libero, corporis dignissimos! Quas ex tempora molestias deserunt quis molestiae praesentium?</p>
+                <p>At Nilkanth Industries, we employ the KTM RIG 600T, a high-performance CNC lathe machine known for its precision and efficiency. This machine excels in turning, facing, drilling, and threading operations, making it ideal for machining complex cylindrical components. With its advanced control system and robust design, the RIG 600T ensures high accuracy, repeatability, and smooth surface finishes. It is widely used for manufacturing automobile parts, precision shafts, and customized industrial fittings, enabling us to meet the stringent quality standards required in modern engineering industries.</p>
             </div>
         </div>
         <div className='machine-area'>
 
         <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium nesciunt accusamus voluptatum facilis, atque labore porro! Nostrum, laudantium voluptatibus doloremque est incidunt, molestiae aliquam labore, nam accusantium blanditiis minus.Veritatis itaque iste culpa nihil harum! Commodi iste fugit repellendus illum fuga quia ea dolorem, dicta repudiandae, earum possimus libero, corporis dignissimos! Quas ex tempora molestias deserunt quis molestiae praesentium?</p>
+        <p>Another essential machine in our facility is the LX20T L5, a state-of-the-art CNC lathe designed for high-speed and precision machining. This machine offers superior performance in fine turning, boring, grooving, and intricate thread cutting, making it highly suitable for producing high-accuracy components. Equipped with an advanced control panel and automated tool-changing capabilities, the LX20T L5 enhances productivity and ensures minimal manual intervention. It is ideal for crafting small to medium-sized precision components used in industries such as aerospace, automotive, and general engineering. </p>
 
         </div>
         <img src={VMC}/>
