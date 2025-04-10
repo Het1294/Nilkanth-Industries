@@ -1,0 +1,100 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.3s ease-out;
+  }
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    color: #2e2e8d;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .row input {
+    flex: 1;
+  }
+  
+  button[type="submit"] {
+    background-color: #2e2e8d;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1c1c70;
+  }
+  
+  button[type="submit"] span {
+    transform: rotate(45deg);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
